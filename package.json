@@ -1,14 +1,14 @@
 {
   "name": "@mikro-orm/reproduction",
   "private": true,
-  "description": "",
+  "description": "Reproduction for \"loadItems()\" overwriting unflushed changes bug.",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
     "start": "jest",
     "test": "jest"
   },
-  "author": "Martin Adamek",
+  "author": "Ties Bolding",
   "license": "MIT",
   "dependencies": {
     "@mikro-orm/core": "next",
