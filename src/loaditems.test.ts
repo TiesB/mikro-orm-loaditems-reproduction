@@ -160,7 +160,7 @@ test('"loadItems()" overwriting unflushed changes', async () => {
   expect(risk.name).toBe("Updated");
 
   await risk.causes.loadItems();
-  expect(risk.name).toBe("Updated");
+  expect(risk.name).toBe("Updated"); // <-- this assertion fails
 
   await orm.em.flush();
   expect(risk.name).toBe("Updated");
